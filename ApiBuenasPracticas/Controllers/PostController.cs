@@ -1,11 +1,13 @@
 ﻿using ApiBuenasPracticas.Response;
 using AutoMapper;
+using CoreBuenasPracticas.CustomEntities;
 using CoreBuenasPracticas.DTOs;
 using CoreBuenasPracticas.Entities;
 using CoreBuenasPracticas.Interfaces;
 using CoreBuenasPracticas.QueryFilters;
 using InfraestructureBuenasPracticas.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -26,14 +28,32 @@ namespace ApiBuenasPracticas.Controllers
 
 
         [HttpGet]
-        public IActionResult GetPosts([FromQuery]PostQueryFilter filters)
+        public IActionResult GetPosts([FromQuery] PostQueryFilter filters)
         {
 
             var posts = _postService.GetPosts(filters);
             var postsDto = _mapper.Map<IEnumerable<PostDto>>(posts);
-            var response = new ApiResponse<IEnumerable<PostDto>>(postsDto);
+
+            var metadata = new Metadata
+            {
+                TotalCount = posts.TotalCount,
+                PageSize = posts.PageSize,
+                CurrentPage = posts.CurrentPage,
+                TotalPages = posts.TotalPages,
+                HasNextPage = posts.HasNextpage,
+                HasPreviousPage = posts.HasPreviouspage,
+
+            };
+            var response = new ApiResponse<IEnumerable<PostDto>>(postsDto)
+            {
+                Meta= metadata
+            };
+
+            Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
             return Ok(response);
         }
+
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPost(int id)

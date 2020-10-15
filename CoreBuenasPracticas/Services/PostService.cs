@@ -1,4 +1,5 @@
-﻿using CoreBuenasPracticas.Entities;
+﻿using CoreBuenasPracticas.CustomEntities;
+using CoreBuenasPracticas.Entities;
 using CoreBuenasPracticas.Exceptions;
 using CoreBuenasPracticas.Interfaces;
 using CoreBuenasPracticas.QueryFilters;
@@ -26,14 +27,14 @@ namespace CoreBuenasPracticas.Services
             return await _unitOfWork.PostRepository.GetById(id);
         }
 
-        public IEnumerable<Post> GetPosts(PostQueryFilter filters)
+        public PagedList<Post> GetPosts(PostQueryFilter filters)
         {
             var post = _unitOfWork.PostRepository.GetAll();
             if (filters.UserId != null)
             {
                 post = post.Where(x => x.UserId == filters.UserId);
             }
-
+            
             if (filters.Date != null)
             {
                 post = post.Where(x => x.Date.ToShortDateString() == filters.Date?.ToShortDateString());
@@ -44,7 +45,9 @@ namespace CoreBuenasPracticas.Services
                 post = post.Where(x => x.Description.ToLower().Contains( filters.Description.ToLower()));
             }
 
-            return post;
+            var pagedPost = PagedList<Post>.Create(post, filters.PageNumber, filters.PageSize);  
+
+            return pagedPost;
         }
 
         public async Task InsertPost(Post post)

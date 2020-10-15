@@ -36,6 +36,7 @@ namespace ApiBuenasPracticas
             }).AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore; //ignorar los valores nulos, no los serializa en el json string
             });
             //Conexion con bd entity framework dbcontext
             services.AddDbContext<SocialMediaContext>(options =>

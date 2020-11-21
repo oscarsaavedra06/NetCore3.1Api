@@ -5,29 +5,40 @@ using CoreBuenasPracticas.DTOs;
 using CoreBuenasPracticas.Entities;
 using CoreBuenasPracticas.Interfaces;
 using CoreBuenasPracticas.QueryFilters;
-using InfraestructureBuenasPracticas.Repositories;
+using InfraestructureBuenasPracticas.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace ApiBuenasPracticas.Controllers
 {
+    [Authorize]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class PostController : ControllerBase
     {
         private readonly IPostService _postService;
         private readonly IMapper _mapper;
-        public PostController(IPostService postService, IMapper mapper)
+        private readonly IUriService _uriService;
+        public PostController(IPostService postService, IMapper mapper, IUriService uriService)
         {
             _postService = postService;
             _mapper = mapper;
+            _uriService = uriService;
         }
 
-
-        [HttpGet]
+        /// <summary>
+        /// Retrieve all posts
+        /// </summary>
+        /// <param name="filters">Filters to apply.</param>
+        /// <returns></returns>
+        [ProducesResponseType((int)HttpStatusCode.OK,Type =typeof(ApiResponse<IEnumerable<PostDto>>))] //muestra en el swagger el modelo de respuesta, no solo muestra un 200, muestra el objeto como responde el api
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [HttpGet(Name =nameof(GetPost))] //nombre del metodo, se usa para identificar un endpiont
         public IActionResult GetPosts([FromQuery] PostQueryFilter filters)
         {
 
@@ -42,6 +53,8 @@ namespace ApiBuenasPracticas.Controllers
                 TotalPages = posts.TotalPages,
                 HasNextPage = posts.HasNextpage,
                 HasPreviousPage = posts.HasPreviouspage,
+                NextPageUrl = _uriService.GetPostPaginationUri(filters, Url.RouteUrl(nameof(GetPost))).ToString(),
+                PreviosPageUrl=_uriService.GetPostPaginationUri(filters, Url.RouteUrl(nameof(GetPost))).ToString()
 
             };
             var response = new ApiResponse<IEnumerable<PostDto>>(postsDto)

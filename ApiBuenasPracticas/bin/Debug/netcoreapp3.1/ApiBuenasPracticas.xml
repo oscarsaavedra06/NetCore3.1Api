@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiBuenasPracticas</name>
+    </assembly>
+    <members>
+        <member name="M:ApiBuenasPracticas.Controllers.PostController.GetPosts(CoreBuenasPracticas.QueryFilters.PostQueryFilter)">
+            <summary>
+            Retrieve all posts
+            </summary>
+            <param name="filters">Filters to apply.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

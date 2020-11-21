@@ -93,3 +93,4 @@ E:\Poryectos-Guia\ApiBuenasPracticas\IntegrationTestsBuenasPracticas\obj\Debug\n
 E:\Poryectos-Guia\ApiBuenasPracticas\IntegrationTestsBuenasPracticas\obj\Debug\netcoreapp3.1\IntegrationTestsBuenasPracticas.dll
 E:\Poryectos-Guia\ApiBuenasPracticas\IntegrationTestsBuenasPracticas\obj\Debug\netcoreapp3.1\IntegrationTestsBuenasPracticas.pdb
 E:\Poryectos-Guia\ApiBuenasPracticas\IntegrationTestsBuenasPracticas\obj\Debug\netcoreapp3.1\IntegrationTestsBuenasPracticas.genruntimeconfig.cache
+E:\Poryectos-Guia\ApiBuenasPracticas\IntegrationTestsBuenasPracticas\obj\Debug\netcoreapp3.1\IntegrationTestsBuenasPracticas.csprojAssemblyReference.cache

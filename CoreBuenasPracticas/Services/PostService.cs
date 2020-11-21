@@ -3,10 +3,9 @@ using CoreBuenasPracticas.Entities;
 using CoreBuenasPracticas.Exceptions;
 using CoreBuenasPracticas.Interfaces;
 using CoreBuenasPracticas.QueryFilters;
+using Microsoft.Extensions.Options;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CoreBuenasPracticas.Services
@@ -17,10 +16,12 @@ namespace CoreBuenasPracticas.Services
         //En esta clase se determina si es valido ir al repositorio o no
         //Api => Servicios => Repositorio
         private readonly IUnitOfWork _unitOfWork;
+        private readonly PaginationOptions _paginationOptions;
 
-        public PostService(IUnitOfWork unitOfWork)
+        public PostService(IUnitOfWork unitOfWork, IOptions<PaginationOptions> options )
         {
             _unitOfWork = unitOfWork;
+            _paginationOptions = options.Value;
         }
         public async Task<Post> GetPost(int id)
         {
@@ -29,6 +30,9 @@ namespace CoreBuenasPracticas.Services
 
         public PagedList<Post> GetPosts(PostQueryFilter filters)
         {
+            filters.PageNumber = filters.PageNumber == 0 ? _paginationOptions.DefaultPageNumber : filters.PageNumber;
+            filters.PageSize = filters.PageSize == 0 ? _paginationOptions.DefaultPageSize : filters.PageSize;
+
             var post = _unitOfWork.PostRepository.GetAll();
             if (filters.UserId != null)
             {

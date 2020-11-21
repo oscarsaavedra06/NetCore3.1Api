@@ -3,7 +3,7 @@ E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\bin\Debug\netstandard2.
 E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.pdb
 E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.AssemblyInfoInputs.cache
 E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.AssemblyInfo.cs
-E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.csproj.CoreCompileInputs.cache
 E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.dll
 E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.pdb
 E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.csprojAssemblyReference.cache
+E:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.csproj.CoreCompileInputs.cache

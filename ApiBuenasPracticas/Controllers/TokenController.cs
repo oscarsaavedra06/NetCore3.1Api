@@ -1,4 +1,5 @@
 ﻿using CoreBuenasPracticas.Entities;
+using CoreBuenasPracticas.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -6,6 +7,7 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ApiBuenasPracticas.Controllers
 {
@@ -14,24 +16,35 @@ namespace ApiBuenasPracticas.Controllers
     public class TokenController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-        public TokenController(IConfiguration configuration)
+        private readonly ISecurityService _securityService;
+        public TokenController(IConfiguration configuration, ISecurityService securityService)
         {
             _configuration = configuration;
+            _securityService = securityService;
         }
 
         [HttpPost]
-        public IActionResult Authentication(UserLogin login)
+        public async Task<IActionResult> Authentication(UserLogin login)
         {
             //if IsValid() si es usuario valido
-            var token = GenerateToken();
+            var validation = await IsValidUser(login);
+            if (validation.Item1)
+            {
+                var token = GenerateToken(validation.Item2);
+                return Ok(token);
+            }
 
-            return Ok();
-
+            return NotFound();
             //Si no es valido return NotFound();
         }
 
+        private async Task<(bool, Security)> IsValidUser(UserLogin login)
+        {
+            var user = await _securityService.GetLoginByCredentials(login);
+            return (user != null, user);
+        }
 
-        private string GenerateToken()
+        private string GenerateToken(Security security)
         {
 
             //Header
@@ -42,9 +55,9 @@ namespace ApiBuenasPracticas.Controllers
             //Claims
             var claims = new[] {
 
-                new Claim(ClaimTypes.Name,"Oscar Saavedra"),
-                new Claim(ClaimTypes.Email,"oscarsaavedra06@gmail.com"),
-                new Claim(ClaimTypes.Role,"Administrador"),
+                new Claim(ClaimTypes.Name,security.UserName),
+                new Claim("user",security.User),
+                new Claim(ClaimTypes.Role,security.Role.ToString()),
             };
 
             //Payload
@@ -54,7 +67,7 @@ namespace ApiBuenasPracticas.Controllers
                 _configuration["Authentication:Audience"],
                 claims,
                 DateTime.Now,
-                DateTime.UtcNow.AddMinutes(2)
+                DateTime.UtcNow.AddMinutes(10)
             );
 
             var token = new JwtSecurityToken(header, payload);

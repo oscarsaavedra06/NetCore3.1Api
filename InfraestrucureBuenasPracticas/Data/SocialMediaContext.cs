@@ -1,8 +1,6 @@
-﻿using System;
+﻿using System.Reflection;
 using CoreBuenasPracticas.Entities;
-using InfraestructureBuenasPracticas.Data.Configurations;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace InfraestructureBuenasPracticas.Data
 {
@@ -20,20 +18,12 @@ namespace InfraestructureBuenasPracticas.Data
         public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<User> Securities { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Comment>(entity =>
-            {
-                
-            });
-
-            modelBuilder.ApplyConfiguration(new CommentConfiguration());
-            modelBuilder.ApplyConfiguration(new PostConfiguration());
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
-
-            OnModelCreatingPartial(modelBuilder);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

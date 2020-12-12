@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/ApiBuenasPracticas",
+      "applicationUrl": "http://localhost/apiSM",
       "sslPort": 0
     },
     "iisExpress": {
@@ -35,6 +35,13 @@
       "launchUrl": "http://localhost/ApiBuenasPracticas",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT ": "Development"
+      }
+    },
+    "Local IIS": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }

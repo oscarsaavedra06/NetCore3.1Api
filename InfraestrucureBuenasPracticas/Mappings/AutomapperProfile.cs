@@ -14,6 +14,8 @@ namespace InfraestructureBuenasPracticas.Mappings
         {
             CreateMap<Post,PostDto>();
             CreateMap<PostDto,Post>();
+
+            CreateMap<Security, SecurityDTO>().ReverseMap();
         }
     }
 }

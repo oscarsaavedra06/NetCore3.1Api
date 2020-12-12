@@ -520,23 +520,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ing Oscar\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
+      "projectUniqueName": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
       "projectName": "CoreBuenasPracticas",
-      "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
-      "packagesPath": "C:\\Users\\Ing Oscar\\.nuget\\packages\\",
-      "outputPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\obj\\",
+      "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
+      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+      "outputPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Ing Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -548,6 +544,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -559,6 +556,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Microsoft.Extensions.Options": {
             "target": "Package",
@@ -581,7 +579,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

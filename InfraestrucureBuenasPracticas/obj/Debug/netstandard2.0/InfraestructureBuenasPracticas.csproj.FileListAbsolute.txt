@@ -10,3 +10,15 @@ E:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\net
 E:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.dll
 E:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.pdb
 E:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.CoreCompileInputs.cache
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\InfraestructureBuenasPracticas.deps.json
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\InfraestructureBuenasPracticas.dll
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\InfraestructureBuenasPracticas.pdb
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.dll
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.pdb
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csprojAssemblyReference.cache
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.AssemblyInfoInputs.cache
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.AssemblyInfo.cs
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.CoreCompileInputs.cache
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.CopyComplete
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.dll
+D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.pdb

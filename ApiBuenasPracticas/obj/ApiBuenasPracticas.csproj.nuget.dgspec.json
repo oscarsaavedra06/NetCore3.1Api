@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj": {}
+    "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj": {}
   },
   "projects": {
-    "E:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj": {
+    "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
+        "projectUniqueName": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
         "projectName": "ApiBuenasPracticas",
-        "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
-        "packagesPath": "C:\\Users\\Ing Oscar\\.nuget\\packages\\",
-        "outputPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\obj\\",
+        "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ing Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,12 +26,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
-                "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj"
+              "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
+                "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj"
               },
-              "E:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj": {
-                "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj"
+              "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj": {
+                "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj"
               }
             }
           }
@@ -47,6 +45,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -89,24 +88,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
+    "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
+        "projectUniqueName": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
         "projectName": "CoreBuenasPracticas",
-        "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
-        "packagesPath": "C:\\Users\\Ing Oscar\\.nuget\\packages\\",
-        "outputPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\obj\\",
+        "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ing Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,6 +114,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -129,6 +126,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Microsoft.Extensions.Options": {
               "target": "Package",
@@ -151,24 +149,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj": {
+    "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj",
+        "projectUniqueName": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj",
         "projectName": "InfraestructureBuenasPracticas",
-        "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj",
-        "packagesPath": "C:\\Users\\Ing Oscar\\.nuget\\packages\\",
-        "outputPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\obj\\",
+        "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj",
+        "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+        "outputPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ing Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -180,9 +175,10 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
-                "projectPath": "E:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj"
+              "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
+                "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj"
               }
             }
           }
@@ -195,6 +191,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -239,7 +236,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

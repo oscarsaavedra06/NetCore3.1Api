@@ -82,13 +82,17 @@ namespace CoreBuenasPracticas.Services
 
         public async Task<bool> Updatepost(Post post)
         {
-            _unitOfWork.PostRepository.Update(post);
+            var existingPost =await _unitOfWork.PostRepository.GetById(post.Id);
+            existingPost.Image = post.Image;
+            existingPost.Description = post.Description;
+            _unitOfWork.PostRepository.Update(existingPost);
             await _unitOfWork.saveChangesAsync();
             return true;
         }
         public async Task<bool> Deletepost(int id)
         {
             await _unitOfWork.PostRepository.Delete(id);
+            await _unitOfWork.saveChangesAsync();
             return true;
         }
     }

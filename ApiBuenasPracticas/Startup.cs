@@ -8,8 +8,10 @@ using CoreBuenasPracticas.Interfaces;
 using CoreBuenasPracticas.Services;
 using FluentValidation.AspNetCore;
 using InfraestructureBuenasPracticas.Data;
+using InfraestructureBuenasPracticas.Extensions;
 using InfraestructureBuenasPracticas.Filters;
 using InfraestructureBuenasPracticas.Interfaces;
+using InfraestructureBuenasPracticas.Options;
 using InfraestructureBuenasPracticas.Repositories;
 using InfraestructureBuenasPracticas.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -50,38 +52,15 @@ namespace ApiBuenasPracticas
             });
 
 
-            services.Configure<PaginationOptions>(Configuration.GetSection("Pagination")); //leer la seccion 
+            services.AddOptions(Configuration)//leer la seccion 
             //paginacion y mapearlacontra clase, el configure crea un singleton automaticamente para ser inyectado 
             //en la solucion (IOptions)
-
             //Conexion con bd entity framework dbcontext
-            services.AddDbContext<SocialMediaContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("SocialMedia"))
-            );
+            .AddDbContexts(Configuration);
             //Dependencias
-            services.AddTransient<IPostService, PostService>();
-            services.AddTransient<ISecurityService, SecurityService>();
-            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddSingleton<IUriService>(provider =>
-            {
-                //se hace para tomar la url de request desde donde esté publicado el api, con esto se forma la url
-                //para la paginacion , ej paginaSiguiente:http://dominio.com/api/post?paginicial=1&PageSize=10
-                var accesor = provider.GetRequiredService<IHttpContextAccessor>();
-                var request = accesor.HttpContext.Request;
-                var absoluteUri = string.Concat(request.Scheme, "://", request.Host.ToUriComponent());
-                return new UriService(absoluteUri); //tarea: tratar de hacer esto para la clase
-                //conexion con ADO.nET
-            });
+            services.AddServices();
             //configuracion swager
-
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Social Media API", Version = "V1" });
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                options.IncludeXmlComments(xmlPath);
-            });
+            services.AddSwagger($"{Assembly.GetExecutingAssembly().GetName().Name}.xml");
 
             services.AddAuthentication(options =>
             {

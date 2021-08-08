@@ -6838,19 +6838,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
+    "C:\\Users\\OSCAR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
+      "projectUniqueName": "E:\\PROYECTOS\\NetCore3.1Api\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
       "projectName": "ApiBuenasPracticas",
-      "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
-      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
-      "outputPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\ApiBuenasPracticas\\obj\\",
+      "projectPath": "E:\\PROYECTOS\\NetCore3.1Api\\ApiBuenasPracticas\\ApiBuenasPracticas.csproj",
+      "packagesPath": "C:\\Users\\OSCAR\\.nuget\\packages\\",
+      "outputPath": "E:\\PROYECTOS\\NetCore3.1Api\\ApiBuenasPracticas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\OSCAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6864,11 +6864,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
-              "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj"
+            "E:\\PROYECTOS\\NetCore3.1Api\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj": {
+              "projectPath": "E:\\PROYECTOS\\NetCore3.1Api\\CoreBuenasPracticas\\CoreBuenasPracticas.csproj"
             },
-            "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj": {
-              "projectPath": "D:\\Poryectos-Guia\\ApiBuenasPracticas\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj"
+            "E:\\PROYECTOS\\NetCore3.1Api\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj": {
+              "projectPath": "E:\\PROYECTOS\\NetCore3.1Api\\InfraestrucureBuenasPracticas\\InfraestructureBuenasPracticas.csproj"
             }
           }
         }
@@ -6924,7 +6924,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

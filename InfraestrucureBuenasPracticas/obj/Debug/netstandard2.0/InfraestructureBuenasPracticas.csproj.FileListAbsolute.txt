@@ -22,3 +22,15 @@ D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\net
 D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.CopyComplete
 D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.dll
 D:\Poryectos-Guia\ApiBuenasPracticas\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.pdb
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\InfraestructureBuenasPracticas.deps.json
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\InfraestructureBuenasPracticas.dll
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\InfraestructureBuenasPracticas.pdb
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.dll
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.pdb
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.AssemblyReference.cache
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.AssemblyInfoInputs.cache
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.AssemblyInfo.cs
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.CoreCompileInputs.cache
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.csproj.CopyComplete
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.dll
+E:\PROYECTOS\NetCore3.1Api\InfraestrucureBuenasPracticas\obj\Debug\netstandard2.0\InfraestructureBuenasPracticas.pdb

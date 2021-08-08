@@ -16,3 +16,12 @@ D:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.
 D:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.csproj.CoreCompileInputs.cache
 D:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.dll
 D:\Poryectos-Guia\ApiBuenasPracticas\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.pdb
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.deps.json
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.dll
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\bin\Debug\netstandard2.0\CoreBuenasPracticas.pdb
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.csproj.AssemblyReference.cache
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.AssemblyInfoInputs.cache
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.AssemblyInfo.cs
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.csproj.CoreCompileInputs.cache
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.dll
+E:\PROYECTOS\NetCore3.1Api\CoreBuenasPracticas\obj\Debug\netstandard2.0\CoreBuenasPracticas.pdb
